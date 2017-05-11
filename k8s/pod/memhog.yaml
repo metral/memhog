@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: memhog-01
+  labels:
+    name: memhog
+  annotations:
+    app-monitor.kubedemo.com/monitor: "true"
+spec:
+  containers:
+  - name: memhog
+    image: quay.io/metral/memhog:v0.0.1
+    imagePullPolicy: Always
+    resources:
+      limits:
+        memory: 400Mi
+      requests:
+        memory: 256Mi
+    args:
+      - -v2
+      - --logtostderr=true
+    env:
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          fieldPath: metadata.namespace
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          fieldPath: metadata.name

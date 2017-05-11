@@ -1,0 +1,9 @@
+apiVersion: kubedemo.com/v1
+kind: AppMonitor
+metadata:
+  name: johnny-cache
+  labels:
+    app: johnny-cache
+spec:
+  memThresholdPercent: 75
+  memMultiplier: 2
