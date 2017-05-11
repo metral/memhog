@@ -2,7 +2,7 @@
 
 An app that wastefully allocates memory.
 
-It is used in tandem with [memhog-operator](https://github.com/memhog-operator) to demo a simple vertical auto-scaler based on memory consumption.
+It is used in tandem with [memhog-operator](https://github.com/metral/memhog-operator) to demo a simple vertical auto-scaler based on memory consumption.
 
 
 ### Building & Running
