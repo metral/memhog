@@ -12,3 +12,9 @@ $ glide up -v
 $ make
 $ $GOPATH/bin/memhog -v2
 ```
+
+```
+// Running on k8s
+
+$ kubectl create -f k8s/ -R
+```
