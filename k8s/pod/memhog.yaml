@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: memhog
-    image: quay.io/metral/memhog:v0.0.1
+    image: quay.io/metral/memhog:v0.0.2
     imagePullPolicy: Always
     resources:
       limits:
