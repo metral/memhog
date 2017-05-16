@@ -55,7 +55,7 @@ func NewCmdOptions() *cobra.Command {
 }
 
 // Create a new command for the memhog. This cmd includes logging,
-// cmd option parsing from flags, and the customization of the Tectonic assets.
+// and cmd option parsing from flags.
 func NewCmdMemHog() (*cobra.Command, error) {
 	// Define the options for MemHog command
 	options := MemHogOptions{}
@@ -88,7 +88,7 @@ func checkErr(err error, handleErr func(string)) {
 	handleErr(err.Error())
 }
 
-// Run the customization of the Tectonic assets
+// Run the memhog
 func RunMemHog(cmd *cobra.Command, options *MemHogOptions) error {
 	return run(options)
 }
