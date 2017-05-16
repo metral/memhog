@@ -51,7 +51,7 @@ func (t *MemHog) HogMemory() {
 		i := rand.Intn(bufferLen)
 		t.Buffer[i] = makeBuffer(5, 10)
 
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 
 		bytes := 0
 		for i := 0; i < bufferLen; i++ {
