@@ -1,21 +1,21 @@
 hash: 9e56fe790035b91efd8b9e8e1b6fe09411a9d82c651ab30c84f79b59336ce925
-updated: 2017-05-11T03:35:46.684811174Z
+updated: 2017-07-25T22:47:53.752893325Z
 imports:
 - name: github.com/golang/glog
   version: 44145f04b68cf362d9c4df2182967c2275eaefed
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
 - name: github.com/spf13/cobra
-  version: 1362f95a8d6fe330d00a64380d6e0b65f4992c72
+  version: 34594c771f2c18301dc152640ad40ece28795373
 - name: github.com/spf13/pflag
   version: e57e3eeb33f795204c1ca35f56c44f83227c6e66
 - name: k8s.io/apimachinery
-  version: 84c15da65eb86243c295d566203d7689cc6ac04b
+  version: 6134cb2da6d90597b0434e349f90f94fafc9ae51
   subpackages:
-  - pkg/util/runtime
   - pkg/util/wait
+  - pkg/util/runtime
 - name: k8s.io/kubernetes
-  version: ee39d359dd0896c4c0eccf23f033f158ad3d3bd7
+  version: 8e5584fe95c01f2b3a9d60fcccef8fadbb4c8f88
   subpackages:
   - pkg/util/logs
 testImports: []
